@@ -18,18 +18,27 @@
 
 					<div class="pos-f-t no-gutters">
 
-						<nav class="navbar navbar-dark">
-							<div class="menu">
+						<nav class="navbar navbar-dark main-nav" id="main-nav">
+							<div>
+								<button id="menu" class="menu-bar navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+									<div class="uno"></div>
+									<div class="dos"></div>
+									<div class="tres"></div>
+								</button>
+								<a href="#"><img src="assets/logo-claro.svg" class="lg_claro img-fluid"></a>
+							</div>
+							<!--<div class="menu">  
 								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="navbar-toggler-icon left"></span> 
 								</button> 
+								
 								<a href="#"><img src="assets/logo-claro.svg" class="lg_claro img-fluid"></a>
-							</div>
-							<a href="#"> <img src="assets/power-sign.svg"> <span class="text-sesion">Cerrar sesión</span></a>
+							</div>-->
+							<a href="login.html"> <img src="assets/power-sign.svg"> <span class="text-sesion">Cerrar sesión</span></a>
 						</nav>
 						
-						<div class="collapse bg-negro" id="navbarToggleExternalContent">
-							<div class="p-4">
+						<div class="menu-main collapse bg-negro" id="navbarToggleExternalContent">
+							<div class="">
 								<ul class="menu navbar-nav">
 									<li class="item-menu"><a href="#" class="nav-link">Productos móviles</a></li>
 									<li class="item-menu"><a href="#" class="nav-link">Equipos</a></li>
@@ -68,13 +77,13 @@
 
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="assets/banner_1.png" class="d-block w-100" alt="...">
+						<img src="assets/banner_1.jpg" class="d-block w-100" alt="...">
 					</div>
 					<div class="carousel-item">
-						<img src="assets/banner_1.png" class="d-block w-100" alt="...">
+						<img src="assets/banner_2.jpg" class="d-block w-100" alt="...">
 					</div>
 					<div class="carousel-item">
-						<img src="assets/banner_1.png" class="d-block w-100" alt="...">
+						<img src="assets/banner_3.jpg" class="d-block w-100" alt="...">
 					</div>
 				</div>
 				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,24 +101,24 @@
 			<div class="container">
 				<h2>Catálogos por categorías</h2>
 				<div class="row">
-					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><img src="assets/catalogo1.png" class="img-fluid"><p>Productos móviles</p></div>
-					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><img src="assets/catalogo2.png" class="img-fluid"><p>Equipos</p></div>
-					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><img src="assets/catalogo3.png" class="img-fluid"><p>Olo</p></div>
-					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><img src="assets/catalogo4.png" class="img-fluid"><p>Claro Hogar</p></div>
-					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><img src="assets/catalogo5.png" class="img-fluid"><p>Claro Negocios</p></div>
-					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><img src="assets/catalogo6.png" class="img-fluid"><p>Valor agregado</p></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo1.png" class="img-fluid"><p>Productos móviles</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo2.png" class="img-fluid"><p>Equipos</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo3.png" class="img-fluid"><p>Olo</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo4.png" class="img-fluid"><p>Claro Hogar</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo5.png" class="img-fluid"><p>Claro Negocios</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo6.png" class="img-fluid"><p>Valor agregado</p></a></div>
 				</div>
 			</div>
 		</section>
 
 		<section class="campanias">
 			<div class="container">
-				<h2>Últimas campañas</h2>
+				<h2>Lo último en promociones</h2>
 				<div class="row">
 					<div class="col-lg-10 mx-auto">
 						<div class="row">
-							<div class="col-lg-8 mt-3 col-sm-7 mx-auto col-11">
-								<a data-toggle="modal" data-target="#exampleModalCenter1"><img src="assets/video1.jpg" class="img-fluid"></a>
+							<div class="col-lg-8 mt-3 col-sm-8 mx-auto col-12">
+								<a data-toggle="modal" data-target="#exampleModalCenter1" class="linkmodal"><img src="assets/video1.jpg" class="img-fluid"></a>
 								<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 									<div class="modal-dialog modal-dialog-centered" role="document">
 										<div class="modal-content">
@@ -121,7 +130,7 @@
 											</div>
 											
 											<div class="modal-body">
-												<iframe width="100%" height="320" src="https://www.youtube.com/embed/C6nRRB92-fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+												<iframe width="100%" height="320" src="https://www.youtube.com/embed/MWQoPu6Iv-8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 											</div>
 
 										</div>
@@ -130,8 +139,8 @@
 							</div>
 							<div class="col-lg-4 col-md-10 mx-auto col-sm-10 col-12">
 								<div class="row">
-									<div class="col-lg-12 col-md-6 mt-3">
-										<a data-toggle="modal" data-target="#exampleModalCenter2"><img src="assets/video2.jpg" class="img-fluid"></a>
+									<div class="col-lg-12 col-md-6 col-6 mt-3">
+										<a data-toggle="modal" data-target="#exampleModalCenter2" class="linkmodal"><img src="assets/video2.jpg" class="img-fluid"></a>
 										<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered" role="document">
 												<div class="modal-content">
@@ -142,14 +151,15 @@
 														</button>
 													</div>
 													<div class="modal-body">
-														<iframe width="100%" height="320" src="https://www.youtube.com/embed/Uum-ucWkMEQ?list=PL4ZABvZe_5Naf932TlUdyiNFxT96gdVvx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+														<iframe width="100%" height="320" src="https://www.youtube.com/embed/Uum-ucWkMEQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-12 col-md-6 mt-3">
-										<a data-toggle="modal" data-target="#exampleModalCenter3"><img src="assets/video3.jpg" class="img-fluid"></a>
+									<div class="col-lg-12 col-md-6 col-6 mt-3">
+										<a data-toggle="modal" data-target="#exampleModalCenter3" class="linkmodal"><img src="assets/video3.jpg" class="img-fluid"></a>
 										<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 											<div class="modal-dialog modal-dialog-centered" role="document">
 												<div class="modal-content">
@@ -160,7 +170,8 @@
 														</button>
 													</div>
 													<div class="modal-body">
-														<iframe width="100%" height="320" src="https://www.youtube.com/embed/Uum-ucWkMEQ?list=PL4ZABvZe_5Naf932TlUdyiNFxT96gdVvx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+														<iframe width="100%" height="320" src="https://www.youtube.com/embed/uMqZQMyHka0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 													</div>
 												</div>
 											</div>
@@ -175,7 +186,7 @@
 					
 					
 					<div class="col-lg-10 mx-auto text-right pt-3">
-						<a href="#" class="enlace_ver">Ver todos &#62;</a>
+						<!--<a href="#" class="enlace_ver">Ver todos &#62;</a>-->
 					</div>
 
 				</div>
@@ -186,16 +197,16 @@
 		<section class="contacto">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-10 mx-auto">
+					<div class="col-lg-12 mx-auto">
 						<div class="row pt-5 pb-4">
 							<div class="col-md-6 col-sm-12">
 									<h3>Contacto</h3>
-									<p>Tel: 998887256 / Lorem ipsum dolor.</p>
+									<p>Tel: <a href="tel:993000488" class="enlace_ver">993000488</a> <a href="https://api.whatsapp.com/send?phone=051993000488&text=%20"><img src="assets/icon-whatsapp.png" width="20px" class="img-fluid"></a> / Email: <a href="mailto:mktclaro@claro.com.pe" class="enlace_ver">mktclaro@claro.com.pe</a>.</p>
 							</div>
 							<div class="col-md-6 col-sm-12 text-right">
-								<a href="#"><img src="assets/icon-facebook.png" class="img-fluid"></a>
-								<a href="#" class="ml-4"><img src="assets/icon-whatsapp.png" class="img-fluid"></a>
-								<a href="#" class="ml-4"><img src="assets/icon-youtube.png" class="img-fluid"></a>
+								<!--<a href="#"><img src="assets/icon-facebook.svg" width="31px" class="img-fluid"></a>-->
+								<!--<a href="#" class="ml-4"><img src="assets/icon-whatsapp.png" class="img-fluid"></a>-->
+								<!--<a href="#" class="ml-4"><img src="assets/icon-youtube.svg" width="34px" class="img-fluid"></a>-->
 							</div>
 						</div>
 					</div>
@@ -210,15 +221,19 @@
 	<footer>
 		<div class="container">
 			<div class="row pt-3">
-				<div class="col-lg-6 col-md-12 text-center">
-					<span class=""><img src="assets/logo-claro.svg" class="lg_claro-f"></span> <span>Todos los derechos reservados, Claro 2018</span>
+				<div class="col-lg-8 col-md-8">
+					<span><img src="assets/logo-claro.svg" class="lg_claro-f"></span> <span class="derechos-reservados">Todos los derechos reservados, Claro 2019</span>
 				</div>
-				<div class="col-lg-6 col-md-12 text-center text-right">
-					<p class="enlace_ver">
-						<a href="http://www.claro.com.pe/institucional/" target="_blank" class="enlace_ver">Sitio Institucional</a> /
+				<div class="col-lg-4 col-md-4 text-right">
+					<p>
+						<a href="http://www.claro.com.pe/" target="_blank" class="enlace_ver">Ir a sitio </a>
+						<!--<a href="http://www.claro.com.pe/institucional/" target="_blank" class="enlace_ver">Sitio Institucional</a> /
 						<a href="http://www.claro.com.pe/legal-y-regulatorio/" target="_blank" class="enlace_ver">Legal y regulatorio</a> /
-						<a href="http://www2.osiptel.gob.pe/Devoluciones/Principal.aspx" target="_blank" class="enlace_ver">Sistema SIRD</a>
+						<a href="http://www2.osiptel.gob.pe/Devoluciones/Principal.aspx" target="_blank" class="enlace_ver">Sistema SIRD</a>-->
 					</p>
+				</div>
+				<div class="col-md-12">
+					<p style="font-size:12px;">Material no publicitario y de uso exclusivo para fuerza de ventas.</p>					
 				</div>
 			</div>
 		</div>
@@ -228,6 +243,7 @@
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js" ></script>
 	
 </body>
 </html>
