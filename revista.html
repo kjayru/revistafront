@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+
+	<title>Revista Digital</title> 
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<style type="text/css">
+		.revista3d {
+				height: 666px;
+				width: 90%;
+				margin: 20px auto;
+				border: 0px solid #000;
+			}
+		 @media screen and (max-width: 540px){
+				.revista3d {
+					height: 400px;
+					width: 80%;
+					margin: 10px auto;
+					border: 0px solid #000;
+				}
+		 }
+		.fullscreen {
+			background-color: #333;
+		}
+	</style>
+
+	<script type="text/javascript">
+		var ub = window.location;
+		var uf="https://www.facebook.com/sharer.php?u="+ub;
+		var ut="https://twitter.com/home?status="+ub;
+		var ug="https://plus.google.com/share?url="+ub;
+		var up="https://www.pinterest.com/pin/create/button/?url="+ub;
+		var ul="https://www.linkedin.com/shareArticle?mini=true&url="+ub;
+		var uw="https://web.whatsapp.com://send?text="+ub;
+	</script>
+
+
+	<!--copiar link en portapapeles-->
+	<script>//<![CDATA[
+	function getlink() {
+	var aux = document.createElement("input");
+	aux.setAttribute("value", window.location.href.split("?")[0].split("#")[0]);
+	document.body.appendChild(aux);
+	aux.select();
+	document.execCommand("copy");
+	document.body.removeChild(aux);
+	var css = document.createElement("style");
+	var estilo = document.createTextNode("#aviso {position:fixed; z-index: 9999999; widht: 120px; top:40%;left:50%;margin-left: -60px;padding: 20px; background: gold;border-radius: 8px;font-size: 14px;font-family: sans-serif;}");
+	css.appendChild(estilo);
+	document.head.appendChild(css);
+	var aviso = document.createElement("div");
+	aviso.setAttribute("id", "aviso");
+	var contenido = document.createTextNode("URL copiada");
+	aviso.appendChild(contenido);
+	document.body.appendChild(aviso);
+	window.load = setTimeout("document.body.removeChild(aviso)", 1000);
+	}
+	//]]></script>
+
+
+</head> 
+<body>
+
+	<!--Compartir facebook-->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}
+		(document, 'script', 'facebook-jssdk'));
+		function facebookShare() {
+			FB.ui({
+				method: 'share_open_graph',
+				action_type: 'og.likes',
+				action_properties: JSON.stringify({
+					object:'https://developers.facebook.com/docs/javascript/examples',
+				})
+			}, function(response){
+				// Debug response (optional)
+				console.log(response);
+			});
+		}
+	</script>
+	<!--//End Compartir facebook-->
+
+	<header class="fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 no-gutters">
+
+					<div class="pos-f-t no-gutters">
+
+						<nav class="navbar navbar-dark main-nav" id="main-nav">
+							<div>
+								<button id="menu" class="menu-bar navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+									<div class="uno"></div>
+									<div class="dos"></div>
+									<div class="tres"></div>
+								</button>
+								<a href="#"><img src="assets/logo-claro.svg" class="lg_claro img-fluid"></a>
+							</div>
+
+							<a href="#"> <img src="assets/power-sign.svg"> <span class="text-sesion">Cerrar sesión</span></a>
+						</nav>
+						
+						<div class="menu-main collapse bg-negro" id="navbarToggleExternalContent">
+							<div class="">
+								<ul class="menu navbar-nav">
+									<li class="item-menu"><a href="#" class="nav-link">Productos móviles</a></li>
+									<li class="item-menu"><a href="#" class="nav-link">Equipos</a></li>
+									<li class="item-menu"><a href="#" class="nav-link">Olo</a></li>
+									<li class="item-menu"><a href="#" class="nav-link">Claro Hogar</a></li>
+									<li class="item-menu"><a href="#" class="nav-link">Claro Negocio</a></li>
+									<li class="item-menu"><a href="#" class="nav-link">Valor agregado</a></li>
+								</ul>
+							</div>
+							<div class="bg_menu" id="navbarToggleExternalContent"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+	</header>
+
+	
+
+
+
+
+
+
+
+
+<!--
+<div id="btrs">
+<p>
+	<a href=”fb-messenger://share/?link= https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fsharing%2Freference%2Fsend-dialog&app_id=123456789”>Send In Messenger</a>
+
+</p>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="main">
+
+		<div style="background: #e9ecef;">
+			<div class="container">
+				<div class="row" aria-label="breadcrumb">
+					<ul class="breadcrumb" style="margin-bottom: 0;">
+						<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Claro Negocios</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-6 pt-2 pb-2"><span class="h4">Claro Negocios</span></div> 
+				<div class="col-md-6 col-sm-6 col-6 text-right pt-2 pb-2"> 
+
+					<!--
+					<div class="dropdown">
+					  <button class="btn dropdown-toggle ico-compartir"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					   <img src="assets/icon-compartir.svg" width="25px">
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <a class="dropdown-item lkdn btnwp-w" href="javascript:void(0);" data-action=”share/whatsapp/share” onclick="window.open(uw,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=800,height=600&quot;);" rel="nofollow" title="Compartir en WhatsApp+"><img alt="Compartir en WhatsApp " src="assets/icon-whatsapp.svg" width="31px" title="Compartir en WhatsApp " /></a>
+					    <a class="dropdown-item mr-2 btnwp-m" href="whatsapp://send?text=http://www.claro.com.pe/" data-action="share/whatsapp/share"><img src="assets/icon-whatsapp.svg" width="31px" class="img-fluid"></a>
+					    <a class="dropdown-item" href='javascript:getlink();'><img src="assets/icon-copia.svg" width="25px"></a>
+					  </div>
+					</div>-->
+
+
+
+					
+
+					
+					<!--<a href="#" class="ml-4"><img src="assets/icon-whatsapp.png" class="img-fluid"></a> -->
+					<!--<a href=”fb-messenger://share/?link= https://www.facebook.com/AmericaMovilPeruSAC/”><img border="0" src="assets/icon-messenger.png"></a>-->
+					<!--<a href=""  class="ml-4" onclick="facebookShare()"  ><img border="0" src="assets/icon-messenger.png"></a>-->
+					<a href="#" class="btn btn-info">Descarga</a> 
+					<script type="text/javascript">
+						window.open('fb-messenger://share?link=' + encodeURIComponent(link) + '&app_id=' + encodeURIComponent(app_id));
+					</script>
+
+				</div>
+			</div>
+			<hr style="margin: 0;">
+		</div>
+			
+			
+		
+		<section class="revista">
+			<!--<div class="container">-->
+				<div class="revista3d" id="revista3d" src="hola_verano.pdf"></div>
+			<!--</div>-->
+
+				<script src="3d-flip-book/js/libs/jquery.min.js"></script>
+				<script src="3d-flip-book/js/libs/html2canvas.min.js"></script>
+				<script src="3d-flip-book/js/libs/three.min.js"></script>
+				<script src="3d-flip-book/js/libs/pdf.min.js"></script>
+
+				<script src="3d-flip-book/js/dist/3dflipbook.js"></script>
+				<script type="text/javascript">
+
+					// // Sample 0 {
+					// $('#revista3d').FlipBook({
+					//   pdf: '3d-flip-book/public/books/pdf/FoxitPdfSdk.pdf',
+					//   template: {
+					//     html: '3d-flip-book/templates/default-book-view.html',
+					//     styles: [
+					//       '3d-flip-book/css/short-black-book-view.css'
+					//     ],
+					//     links: [
+					//       {
+					//         rel: 'stylesheet',
+					//         href: '3d-flip-book/css/font-awesome.min.css'
+					//       }
+					//     ],
+					//     script: '3d-flip-book/js/default-book-view.js'
+					//   }
+					// });
+					// // }
+
+					// // Sample 1 {
+					// function theKingIsBlackPageCallback(n) {
+					// 	return {
+					// 		type: 'image',
+					// 		src: '3d-flip-book/public/books/image/theKingIsBlack/'+(n+1)+'.jpg',
+					// 		interactive: true
+					// 	};
+					// }
+					// 				$('#revista3d').FlipBook({
+					// 	pageCallback: theKingIsBlackPageCallback,
+					// 	pages: 40,
+					// 	propertiesCallback: function(props) {
+					// 		props.cover.color = 0x000000;
+					// 		return props;
+					// 	},
+					// 	template: {
+					// 		html: '3d-flip-book/templates/default-book-view.html',
+					// 		styles: [
+					// 			'3d-flip-book/css/short-white-book-view.css'
+					// 		],
+					// 		links: [
+					// 			{
+					// 				rel: 'stylesheet',
+					// 				href: '3d-flip-book/css/font-awesome.min.css'
+					// 			}
+					// 		],
+					// 		script: '3d-flip-book/js/default-book-view.js',
+					// 		sounds: {
+					// 			startFlip: '3d-flip-book/sounds/start-flip.mp3',
+					// 			endFlip: '3d-flip-book/sounds/end-flip.mp3'
+					// 		}
+					// 	}
+					// //});
+
+
+
+					// }
+
+					// Sample 2 {
+					$('#revista3d').FlipBook({
+					  pdf: 'assets/hola_verano.pdf',
+					  template: {
+					    html: '3d-flip-book/templates/default-book-view.html',
+					    styles: [
+					      '3d-flip-book/css/white-book-view.css'
+					    ],
+					    links: [
+					      {
+					        rel: 'stylesheet',
+					        href: '3d-flip-book/css/font-awesome.min.css'
+					      }
+					    ],
+					    script: '3d-flip-book/js/default-book-view.js'
+					  }
+					});
+					// }
+
+					// // Sample 3 {
+					// $('#revista3d').FlipBook({
+					//   pdf: 'public/books/pdf/TheThreeMusketeers.pdf',
+					//   propertiesCallback: function(props) {
+					//     props.page.depth /= 2.5;
+					//     props.cover.padding = 0.002;
+					//     return props;
+					//   },
+					//   template: {
+					//     html: 'templates/default-book-view.html',
+					//     styles: [
+					//       'css/short-black-book-view.css'
+					//     ],
+					//     links: [
+					//       {
+					//         rel: 'stylesheet',
+					//         href: 'css/font-awesome.min.css'
+					//       }
+					//     ],
+					//     script: 'js/default-book-view.js'
+					//   }
+					// });
+					// // }
+
+					// // Sample 4 {
+					// function preview(n) {
+					//   return {
+					//     type: 'html',
+					//     src: 'public/books/html/preview/'+(n%3+1)+'.html',
+					//     interactive: true
+					//   };
+					// }
+					//
+					// $('#revista3d').FlipBook({
+					//   pageCallback: preview,
+					//   pages: 20,
+					//   propertiesCallback: function(props) {
+					//     props.sheet.color = 0x008080;
+					//     props.cover.padding = 0.002;
+					//     return props;
+					//   },
+					//   template: {
+					//     html: 'templates/default-book-view.html',
+					//     styles: [
+					//       'css/black-book-view.css'
+					//     ],
+					//     links: [
+					//       {
+					//         rel: 'stylesheet',
+					//         href: 'css/font-awesome.min.css'
+					//       }
+					//     ],
+					//     script: 'js/default-book-view.js'
+					//   }
+					// });
+					// // }
+
+				</script>
+		</section>
+
+
+		<section class="catalogos catalogos-m">
+			<div class="container">
+				<h2>Catálogos por categorías</h2>
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo1.png" class="img-fluid"><p>Productos móviles</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo2.png" class="img-fluid"><p>Equipos</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo3.png" class="img-fluid"><p>Olo</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo4.png" class="img-fluid"><p>Claro Hogar</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo5.png" class="img-fluid"><p>Claro Negocios</p></a></div>
+					<div class="col-lg-2 col-md-4 col-sm-6 col-6"><a href="#" class="enlace_ver"><img src="assets/catalogo6.png" class="img-fluid"><p>Valor agregado</p></a></div>
+				</div>
+			</div>
+		</section>
+
+		
+
+
+		
+
+		<section class="contacto">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 mx-auto">
+						<div class="row pt-5 pb-4">
+							<div class="col-md-6 col-sm-12">
+									<h3>Contacto</h3>
+									<p>Tel: <a href="tel:993000488" class="enlace_ver">993000488</a> <a href="https://api.whatsapp.com/send?phone=051993000488&text=%20"><img src="assets/icon-whatsapp.png" width="20px" class="img-fluid"></a> / Email: <a href="mailto:mktclaro@claro.com.pe" class="enlace_ver">mktclaro@claro.com.pe</a>.</p>
+							</div>
+							<div class="col-md-6 col-sm-12 text-right">
+								<!--<a href="#"><img src="assets/icon-facebook.svg" width="31px" class="img-fluid"></a>
+								<a href="#" class="ml-4"><img src="assets/icon-whatsapp.png" class="img-fluid"></a>
+								<a href="#" class="ml-4"><img src="assets/icon-youtube.svg" width="34px" class="img-fluid"></a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div>
+
+
+	<footer>
+		<div class="container">
+			<div class="row pt-3">
+				<div class="col-lg-8 col-md-8">
+					<span><img src="assets/logo-claro.svg" class="lg_claro-f"></span> <span class="derechos-reservados">Todos los derechos reservados, Claro 2019</span>
+				</div>
+				<div class="col-lg-4 col-md-4 text-right">
+					<p>
+						<a href="http://www.claro.com.pe/" target="_blank" class="enlace_ver">Ir a sitio </a>
+						<!--<a href="http://www.claro.com.pe/institucional/" target="_blank" class="enlace_ver">Sitio Institucional</a> /
+						<a href="http://www.claro.com.pe/legal-y-regulatorio/" target="_blank" class="enlace_ver">Legal y regulatorio</a> /
+						<a href="http://www2.osiptel.gob.pe/Devoluciones/Principal.aspx" target="_blank" class="enlace_ver">Sistema SIRD</a>-->
+					</p>
+				</div>
+				<div class="col-md-12">
+					<p style="font-size:12px;">Material no publicitario y de uso exclusivo para fuerza de ventas.</p>					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js" ></script>
+
+
+
+
+
+	
+</body>
+</html>
+
+
