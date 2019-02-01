@@ -395,5 +395,15 @@ footer{
 	}
 
 }
+.salto{
+
+}
+@media screen and (max-width: 769px) {
+	.salto{
+		display: block;
+    visibility: hidden;
+    height: 0px;
+	}
+}
 
 
