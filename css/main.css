@@ -405,5 +405,14 @@ footer{
     height: 0px;
 	}
 }
+.mini-wv{
+	max-width: 275px !important;
+}
+
+@media screen and (max-width: 1200px) {
+	.mini-wv{
+		max-width: 100% !important;
+	}
+}
 
 
