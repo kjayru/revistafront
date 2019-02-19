@@ -3,7 +3,7 @@
 	padding: 0;
 }
 header{
-	background: #000000;
+	background: #e23230;
 	height: 57px;
 }
 header .navbar{
@@ -98,13 +98,33 @@ header .navbar a .text-sesion{
 	bottom: 0;
 }
 
+
+.mkt{
+	background: #f7f7f7;
+	padding: 40px 20px;
+}
+
+.mkt .tit-icon{
+	display: block;
+	padding: 0px 0;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+}
+
+
+
 .catalogos{
 	padding: 20px 0 40px;
+}
+.catalogos .row{
+	overflow: hidden;
+	text-align: center;
 }
 .catalogos img{
 	margin: 0 auto;
 	display: block;
-	margin-left: 5%; 
+	margin-left: 10%; 
 }
 
 .catalogos h2{
@@ -115,9 +135,41 @@ header .navbar a .text-sesion{
 	padding-bottom: 30px;
 }
 
-.catalogos p{
+.col-lg-5c {
+  width: 20%;
+  float: left;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+	.col-lg-5c {
+	  width: 33%;
+	  float: none;
+	  display: inline-block;
+	  vertical-align: top;
+	}
+}
+@media screen and (max-width: 450px) {
+	.col-lg-5c {
+	  width: 50%;
+	}
+}
+
+.catalogos .container .row .col-lg-5c  h3{
 	text-align: center;
+	font-size: 20px;
 	font-weight: 500;
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+.catalogos .container .row .col-lg-5c .enlace_ver:hover{
+	text-decoration: none;
+}
+
+.catalogos .container .row .col-lg-5c  p{
+	text-align: center;
+	font-size: 14px;
+	color: #000;
 }
 
 .catalogos-m{
@@ -150,6 +202,7 @@ footer{
 
 .contacto{
 	width: 100%;
+	display: none;
 }
 
 @media screen and (max-width: 540px) {
@@ -405,6 +458,7 @@ footer{
     height: 0px;
 	}
 }
+
 .mini-wv{
 	max-width: 275px !important;
 }
@@ -414,5 +468,24 @@ footer{
 		max-width: 100% !important;
 	}
 }
+
+.banner-w{
+	display: block;
+}
+@media screen and (max-width: 550px){
+	.banner-w{
+		display: none !important;
+	}
+}
+.banner-m{
+	display: none;
+}
+@media screen and (max-width: 550px){
+	.banner-m{
+		display: block !important;
+	}
+}
+
+
 
 
